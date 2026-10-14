@@ -6,11 +6,12 @@
     "configurations": [
         
         {
-            "type": "chrome",
+            "type": "pwa-chrome",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
+            "name": "Launch NSM Technologies website",
+            "url": "http://127.0.0.1:5000",
+            "webRoot": "${workspaceFolder}/public",
+            "preLaunchTask": "Start Firebase Hosting emulator"
         }
     ]
 }

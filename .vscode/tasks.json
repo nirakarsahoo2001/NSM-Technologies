@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Firebase Hosting emulator",
+            "type": "shell",
+            "command": "firebase",
+            "args": [
+                "emulators:start",
+                "--only",
+                "hosting",
+                "--project",
+                "game-zone-clasic"
+            ],
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "custom",
+                "pattern": {
+                    "regexp": "^(.*)$",
+                    "message": 1
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": ".*",
+                    "endsPattern": "All emulators ready!"
+                }
+            }
+        }
+    ]
+}
